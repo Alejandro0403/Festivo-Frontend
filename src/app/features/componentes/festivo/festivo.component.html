@@ -1,0 +1,8 @@
+<div class="encabezado"> Festividad de una fecha </div>
+<div>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Seleccione una fecha" [(ngModel)]="Fecha" (click)="picker.open()">
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+<button mat-raised-button style="background-color:navy; color:yellow" (click)="verificarFecha()">Verificar</button>
+</div>

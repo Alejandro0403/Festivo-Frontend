@@ -1,0 +1,12 @@
+<mat-toolbar style="background-color:rgb(255, 230, 0); color:navy; font-weight:900; height: 100px;
+font-size: 200%;">
+    <span>FESTIVOS COLOMBIA</span>
+</mat-toolbar>
+<div style="background-color:navy; height:50px;">
+  <button mat-button style="background-color:navy; color:rgb(255, 230, 0)" (click)="verificarFestivo()">Verificar Festivos</button>
+  <button mat-button style="background-color:navy; color:rgb(255, 230, 0)" (click)="listarFestivos()">Festivos del año</button>
+</div>
+<div [class.ocultar]="!router.isActive('/',true)" class="encabezado">
+  Inicio
+</div>
+<router-outlet ></router-outlet>

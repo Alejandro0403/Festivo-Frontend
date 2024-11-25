@@ -1,0 +1,14 @@
+<div class="encabezado"> Festivos del Año </div>
+<div>
+  <mat-form-field>
+    <mat-label>Año</mat-label>
+    <input matInput [(ngModel)]="Dato">
+  </mat-form-field>
+<button  mat-button style="background-color:navy; color:yellow" (click)="listarFestivos()">Festivos</button>
+</div>
+<div>
+  <ngx-datatable class="material" [rows]="festivos" [columns]="columnas" [limit]="10" [headerHeight]="50"
+  [footerHeight]="50" [rowHeight]="'auto'" [columnMode]="modoColumna.force"
+  [selectionType]="tipoSeleccion.single"></ngx-datatable>
+</div>
+
